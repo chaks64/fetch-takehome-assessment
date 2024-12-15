@@ -1,0 +1,28 @@
+{
+  "port": 3001,
+  "db": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "validation": {
+    "requiredProperties" : ["retailer", "purchaseDate", "purchaseTime", "items", "total"],
+    "requiredItemProperties": ["shortDescription", "price"]
+  },
+  "regexPatterns": {
+    "retailer": "^[\\w\\s\\-&]+$",
+    "date": "^\\d{4}-\\d{2}-\\d{2}$",
+    "time": "^\\d{2}:\\d{2}$",
+    "price": "^\\d+\\.\\d{2}$",
+    "shortDesc": "^[\\w\\s\\-]+$"
+  },
+  "pointsMultiplier": {
+    "retailerName": 1,
+    "totalRound": 50,
+    "totalMultiple": 25,
+    "itemPoints": 5,
+    "itemDesc": 0.2,
+    "purchaseDate": 6,
+    "timeInterval": 10
+  }
+}
+  
