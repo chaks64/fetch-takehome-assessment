@@ -20,7 +20,7 @@ This project utilizes Docker and Redis to perform [Since using nodejs and all th
    
    - Change into the project directory
    ``` shell 
-   cd fetch-takehome-assignment 
+   cd fetch-takehome-assessment 
    ```
  
 ### 2. Run the Docker image as a container by executing the following command
