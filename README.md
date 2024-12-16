@@ -28,12 +28,25 @@ This project utilizes Docker and Redis to perform [Since using nodejs and all th
   ```shell
   docker-compose down && docker-compose pull
   ```
+  OR 
+  ```shell
+  docker compose down && docker compose pull
+  ```
+
    - Rebuild the Docker image using docker-compose build: 
   ```shell
   docker-compose build
   ```
+  OR
+  ```shell
+  docker compose build
+  ```
 
    - Rebuild the Docker image using docker-compose build: ("-d" to run in detach mode)
+  ```shell
+  docker-compose up -d
+  ```
+  OR
   ```shell
   docker-compose up -d
   ```
