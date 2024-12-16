@@ -48,7 +48,7 @@ This project utilizes Docker and Redis to perform [Since using nodejs and all th
   ```
   OR
   ```shell
-  docker-compose up -d
+  docker compose up -d
   ```
 
 ## Running APIs
