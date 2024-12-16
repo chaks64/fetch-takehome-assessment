@@ -1,6 +1,5 @@
 const logger = require("../utils/logger");
 const { redisConn } = require("../utils/db");
-const { pointsCalculator } = require("../utils/pointsCalculator");
 const client = redisConn();
 
 module.exports.retrivePoints = async (req, res, next) => {
@@ -13,8 +12,7 @@ module.exports.retrivePoints = async (req, res, next) => {
         return;
       }
       if (value) {
-        // let points = pointsCalculator(JSON.parse(value));
-        res.status(200).json({ value });
+        res.status(200).json({ "points" : points});
       } else {
         res.status(404).json({ error: `No receipt found for ${key} id` });
       }
