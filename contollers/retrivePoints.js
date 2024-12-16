@@ -12,7 +12,7 @@ module.exports.retrivePoints = async (req, res, next) => {
         return;
       }
       if (value) {
-        res.status(200).json({ "points" : points});
+        res.status(200).json({ "points" : value});
       } else {
         res.status(404).json({ error: `No receipt found for ${key} id` });
       }
